@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Rubik:wght@400;500&family=Staatliches&display=swap');
+
+:root {
+  --color1: #231F20;
+  --color2: #F09A23;
+  --color3: #F2D335;
+  --color4: #FCFCFC;
+  --color5: #D1DEDE;
+}
+
+/* font-family: 'Rowdies', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Staatliches', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color1);
+  background-color: var(--color5);
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  max-width: 1500px;
+  height: 200px;
+  background-color: var(--color4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(35,31,32,0.53);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(35,31,32,0.53);
+  box-shadow: 0px 4px 13px 0px rgba(35,31,32,0.53);
+}
+
+#brand {
+  display: flex;
+  height: 100%;
+  width: 35%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-img {
+  height: 100%;
+  margin-left: 3%;
+}
+
+#header h1 {
+  font-family: 'Rowdies', cursive;
+  font-size: 3.5rem;
+}
+
+#nav-bar {
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color2);
+  font-size: 1.8rem
+}
+
+.nav-link:hover {
+  color: var(--color1);
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow-y: auto; 
+  max-width: 1500px;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+  color: var(--color1);
+}
+
+#features {
+  margin-bottom: 10rem;
+  padding-top: 6rem;
+  font-size: 2rem;
+  color: var(--color4);
+  width: 100%;
+}
+
+#features ul li {
+  margin: 4rem 0;
+}
+
+#features span {
+  color: var(--color1);
+  margin: 0 1.5rem;
+}
+
+#features li:hover {
+  color: var(--color1);
+}
+
+h3 {
+  font-size: 4rem;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 0.7rem;
+  width: 50%;
+  margin: 0 auto 10rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+h3:hover {
+  color: var(--color3);
+  background-color: var(--color1);
+}
+
+#models p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+}
+
+#models {
+  width: 100%;
+  margin: 5rem auto 13rem;
+}
+
+#models > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.model img {
+  width: 95%;
+  border-radius: 5px;
+  border: 2px solid var(--color1);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+  box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+}
+
+.model p {
+  margin-top: 1rem;
+}
+
+.model:hover {
+  color: var(--color2);
+}
+
+.model img:hover {
+  outline: 1px solid var(--color2);
+  border: 2px solid var(--color2);
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: -22rem 0 -10rem;
+}
+
+#video {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding-top: 3rem;
+}
+
+label {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+input {
+  font-family: 'Rubik', sans-serif;
+  border-radius: 5px;
+}
+
+input[type="email"] {
+  font-size: 2rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  outline: none;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+input[type="email"]:focus {
+  outline: 1px solid var(--color3);
+  border-color: var(--color3);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--color2);
+  color: var(--color4);
+}
+
+#form {
+  font-size: 2rem;
+  margin: 8rem auto 10rem;
+  background-color: var(--color4);
+  width: 40%;
+  padding: 2.5em 0 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+  box-shadow: 4px 4px 5px 0px rgba(35,31,32,0.53);
+}
+
+footer {
+  background-color: var(--color1);
+  color: var(--color4);
+  font-size: 1.6rem;
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+footer a:hover {
+  color: var(--color3);
+}
+
+@media (max-width: 710px) {
+  #header {
+    height: 125px;
+    flex-direction: column; 
+  }
+  #brand {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+  }
+  #header-img {
+    margin-left: 0;
+  }
+  #header h1 {
+    font-size: 3rem;
+  }
+  #nav-bar {
+    margin-left: 0;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+  }
+  main {
+    height: calc(100vh - 125px);
+    top: 125px;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  #features {
+    font-size: 1.7rem;
+    padding-top: 5rem;
+    margin-bottom: 6rem;
+  }
+  #features ul li {
+    margin: 3rem 0;
+  }
+  h3 {
+    font-size: 3rem;
+    width: 50%;
+    margin: 0 auto 4rem;
+  }
+  #models p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+  #models {
+    margin: 4rem auto 15rem;
+  }
+  #models > div {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .model img {
+    width: 50%;
+  }
+  #video {
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    padding-top: 3rem;
+  }
+  #form {
+    font-size: 1.7rem;
+    margin: 13rem auto 7rem;
+    width: 70%;
+    padding: 2em 0 0.8em;
+  }
+  input[type="email"] {
+    font-size: 1.7rem;
+  }
+  input[type="submit"] {
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+  footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 342px) {
+  #header h1 {
+    font-size: 2.4rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  #features {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  #features ul li {
+    margin: 2.5rem 0;
+  }
+  #features span {
+    margin: 0;
+  }
+  h3 {
+    font-size: 2.5rem;
+    width: 53%;
+    margin: 0 auto 3rem;
+  }
+  #models p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+  }
+  #models {
+    margin: 3rem auto 22rem;
+  }
+  .model img {
+    width: 60%;
+  }
+  #video {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding-top: 0;
+  }
+  #form {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    width: 85%;
+  }
+  input[type="email"] {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  input[type="submit"] {
+    font-size: 1.8rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
